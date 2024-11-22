@@ -1,7 +1,7 @@
 from sqlalchemy import func, case, select, text, or_
 from sqlalchemy.orm import aliased, Session
 from fastapi import FastAPI, Depends, HTTPException, UploadFile, File
-from models import Base, JobTask, Ecp, TagsBeta, TagsJob, Categories, JobStatus, OrderCycle, Tags, CommentType, SupportJob, Users  # import your models
+from app.models import  JobTask, Ecp, TagsBeta, TagsJob, Categories, JobStatus, OrderCycle, Tags, CommentType, SupportJob, Users  # import your models
 # from models import JobTask, Ecp, TagsBeta, TagsJob, Categories, JobStatus, OrderCycle, Tags, CommentType, SupportJob, Users  # import your models
 from typing import List  # เพิ่มการนำเข้า List
 from pydantic import BaseModel
@@ -15,7 +15,7 @@ from typing import Optional, List
 from datetime import datetime
 import os
 from dotenv import load_dotenv
-from database import SQLALCHEMY_DATABASE_URL, get_db
+from app.database import SQLALCHEMY_DATABASE_URL, get_db
 from fastapi.middleware.cors import CORSMiddleware
 import time  # เพิ่มบรรทัดนี้
 from random import randint  # เพิ่มบรรทัดนี้
