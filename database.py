@@ -17,8 +17,8 @@ if os.getenv('ENV_SSH') == 'SSH':
     SSH_PASSWORD = os.getenv('SSH_PASSWORD')
 
 # ข้อมูลฐานข้อมูล
-DB_HOST = os.getenv('LOCAL_HOST', 'localhost')
-DB_PORT = int(os.getenv('LOCAL_PORT', 3306))
+DB_HOST = os.getenv('LOCAL_HOST')
+DB_PORT = int(os.getenv('LOCAL_PORT'))
 DB_USER = os.getenv('LOCAL_USER')
 DB_PASSWORD = os.getenv('LOCAL_PASSWORD')
 DB_NAME = os.getenv('LOCAL_NAME')
