@@ -568,3 +568,6 @@ def search_ecp(search: str, session: Session = Depends(get_db)):
         "recordsFiltered": len(query),
         "data": [ecp for ecp in query]
     }
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000)
