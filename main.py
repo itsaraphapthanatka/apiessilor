@@ -192,7 +192,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost", "https://essilor.lumpsum.cloud","https://apiessilor.lumpsum.cloud"],  # List allowed origins
+    allow_origins=["http://localhost", "https://essilor.lumpsum.cloud","https://apiessilor.lumpsum.cloud","https://essilor-352c706b5445.herokuapp.com","https://essilor-352c706b5445.herokuapp.com"],  # List allowed origins
     allow_credentials=True,  # Allow cookies/auth headers
     allow_methods=["*"],  # Allow all methods (GET, POST, PUT, etc.)
     allow_headers=["*"],  # Allow all headers
